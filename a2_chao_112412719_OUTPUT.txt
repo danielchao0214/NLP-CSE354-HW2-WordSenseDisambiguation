@@ -1,0 +1,35 @@
+
+[TESTING UNIGRAM WSD MODELS]
+process
+  predictions for process.NOUN.000018:  [ 0.30312347  2.607462   -0.92185724  0.1996173  -1.4018724  -0.80350685]
+  predictions for process.NOUN.000024:  [ 0.41205087  2.8393128  -1.213444    0.74961066 -1.6854132  -1.1250539 ]
+  correct:  150  out of  202
+machine
+  predictions for machine.NOUN.000004:  [-0.57252884  2.7363162   0.60054266 -0.3052829  -1.0966296  -1.4036454 ]
+  predictions for machine.NOUN.000008:  [-0.41570175  2.266111    1.6657196  -0.46423012 -1.4398477  -1.668463  ]
+  correct:  144  out of  202
+language
+  predictions for language.NOUN.000008:  [-1.4417508   0.5700737   0.28997323 -0.9870832   2.2681534  -0.67339474]
+  predictions for language.NOUN.000014:  [-0.86199373  0.5472509  -0.23477195 -0.894248    1.4429731  -0.03777087]
+  correct:  150  out of  202
+
+[DISTANCE BT WORDS]
+('language', 'process'):  1.3451984753967088
+('machine', 'process'):  1.3480133325474735
+('language', 'speak'):  0.911631465433277
+('word', 'words'):  0.4366364822411914
+('word', 'the'):  0.9989886563234972
+
+[TESTING WSD WITH EMBEDDINGS]
+process
+  predictions for process.NOUN.000018:  [ 0.15902418  2.7816663  -0.6189833   1.025447   -2.1754115  -1.0381596 ]
+  predictions for process.NOUN.000024:  [ 0.56397295  3.3969622  -1.414156    1.4439602  -2.419392   -1.456496  ]
+  correct:  143  out of  202
+machine
+  predictions for machine.NOUN.000004:  [-0.5580583  3.0189934  0.8677548  0.2622117 -2.2586565 -1.2252111]
+  predictions for machine.NOUN.000008:  [-0.11170997  2.3069928   1.3046138  -0.7400302  -1.0574954  -1.8492322 ]
+  correct:  143  out of  202
+language
+  predictions for language.NOUN.000008:  [-1.7215981   0.17241961  0.9207628  -0.81617314  2.4640143  -1.2663649 ]
+  predictions for language.NOUN.000014:  [-1.2200887   0.03095317 -0.14683542 -0.6639742   1.9296552  -0.36604846]
+  correct:  144  out of  202
